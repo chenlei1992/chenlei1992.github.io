@@ -47,7 +47,7 @@ game.TitleScreen = me.ScreenObject.extend({
                 // size does not matter, it's just to avoid having a zero size
                 // renderable
                 this._super(me.Renderable, 'init', [0, 0, 100, 100]);
-                this.text = me.device.touch ? '点击开始游戏' : '请点击开始游戏 \n\t\t\t\t\t\t\t\t\t\t\t';
+                this.text = me.device.touch ? '点击开始游戏' : '          点击开始游戏 \n\t\t\t\t\t\t\n建议使用手机自带浏览器，横屏玩！';
                 this.font = new me.Font('gamefont', 20, '#000');
             },
             draw: function (renderer) {
